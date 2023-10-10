@@ -1,6 +1,6 @@
 def solution(n):
-    
-    answer = str(n)
+    result = str(n)
+    answer = 
     return answer
 
 print(solution(1234))
