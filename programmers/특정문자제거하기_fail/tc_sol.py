@@ -1,7 +1,7 @@
 # #방법1 
 # def solution(my_string, letter):
 #     anwer = ''
-#     answer = my_string.replace(letter, '')
+#     answer = answer.replace(letter, '')
 
 #     return answer
 
