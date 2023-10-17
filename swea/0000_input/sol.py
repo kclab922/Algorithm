@@ -38,3 +38,7 @@ for number in numbers:
         print(f'{number}은 홀수입니다.')
 
 # 2차원리스트는 나중에
+
+
+
+
