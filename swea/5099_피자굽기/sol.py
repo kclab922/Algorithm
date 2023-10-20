@@ -17,8 +17,10 @@ for tc in range(1, T+1):
         out_fire = pizza_info[N:] # 화덕에 아직 못들어간 피자
 
     # 화덕에서 피자가 없어질 때까지 반복
-    while in_fire:
-        in_fire.pop(0) = c_i, c 
+    while len[in_fire] =! 1:
+        
+
+      
 
         
 
