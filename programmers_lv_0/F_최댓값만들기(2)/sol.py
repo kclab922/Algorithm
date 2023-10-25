@@ -1,12 +1,10 @@
 def solution(numbers):
-    answer = 0
+    my_max = 0
     for i in range(len(numbers)):
         for j in range(len(numbers)):
-            if numbers[i]*numbers[j] > answer and i != j:
-                answer = numbers[i]*numbers[j]
-            else: 
-                continue
-    return answer
+            if numbers[i]*numbers[j] > my_max and i != j:
+                my_max = numbers[i]*numbers[j]
+    return my_max
 
 print(solution([1, 2, -3, 4, -5]))
 print(solution([0, -31, 24, 10, 1, 9]))
