@@ -1,6 +1,7 @@
 def solution(n):
-    result = str(n)
-    answer = 
+    answer = 0
+    for num in str(n):
+        answer += int(num)
     return answer
 
 print(solution(1234))
