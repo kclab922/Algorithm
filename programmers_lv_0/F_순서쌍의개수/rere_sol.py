@@ -8,6 +8,7 @@ def solution(n):
 print(solution(20))
 print(solution(100))
 
+# 틀린풀이
 def solution(n):
     count = 0
     for i in range(1, n//2+1):
