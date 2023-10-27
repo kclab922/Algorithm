@@ -1,8 +1,8 @@
 def solution(numbers, direction):
-    for i in range(len(numbers)-1):
-        if direction == 'right':
-            numbers[len(numbers)-1] = numbers[0]
-            numbers[i] = numbers[i+1]
+    if direction == 'right':
+        numbers[0] = numbers[len(numbers)-1] 
+    elif direction == 'left':
+        numbers[len(numbers)-1] = numbers[0]
     return numbers
 
 print(solution([1, 2, 3], "right"))
