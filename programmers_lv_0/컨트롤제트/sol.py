@@ -1,13 +1,13 @@
-
 def solution(s):
-    answer = 0
-    s = s.split(' ')
-    for a in s:
-        if not a.isalpha():
-            answer += int(a)
-        elif a == 'Z':
-            answer -= int(s[s.index('Z')-1])
-    return answer
+    # answer = 0
+    # s = s.split(' ')
+    # for n in s:
+    #     if n.isalpha():
+    #         answer += int(n)
+    #     elif n == 'Z':
+    #         answer -= int(s[s.index('Z')-1])
+    return sum(int(s))
+
 
 print(solution("1 2 Z 3"))
 print(solution("10 20 30 40"))
