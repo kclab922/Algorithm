@@ -8,12 +8,20 @@ def solution(numbers):
     return int(numbers)
 
 
-# 다른 풀이
+# 다른 풀이 1.
 # 내 풀이와 같은 맥락
 # tip: enumerate() => (인덱스, '원소') 출력
 def solution(numbers):
     for num, eng in enumerate(["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]):
         numbers = numbers.replace(eng, str(num))
+    return int(numbers)
+
+# 다른 풀이 2.
+#  for k in dict.keys()
+def solution(numbers):
+    r = {'zero': '0', 'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5', 'six': '6', 'seven': '7', 'eight': '8', 'nine': '9'}
+    for k in r.keys():
+        numbers = numbers.replace(k, r[k])
     return int(numbers)
 
 print(solution("onetwothreefourfivesixseveneightnine"))
