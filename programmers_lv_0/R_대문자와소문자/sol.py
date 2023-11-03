@@ -1,5 +1,5 @@
-# 풀이1
-# tip: str.isupper() / str.lower() / str.upper() / str.swapcase()
+# str.isupper() / str.lower() / str.upper() / 대소변경: str.swapcase()
+
 def solution(my_string):
     answer = ''
     for char in my_string:

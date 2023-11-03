@@ -1,7 +1,9 @@
 def solution(quiz):
-    l = ','.join(quiz).split(',', ' ')
+    result = []
+    for q in quiz:
+        list(q).remove(' ')
 
-    return l
+    return 
 
 
 print(solution(["3 - 4 = -3", "5 + 6 = 11"]))

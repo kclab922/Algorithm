@@ -1,8 +1,13 @@
+# 내 코드 1 (list comprehension ver.)
+def solution(n, numlist):
+    return [m for m in numlist if m % n == 0]
+
+# 내 코드 2
 def solution(n, numlist):
     answer = []
-    for num in numlist:
-        if num % n == 0:
-            answer.append(num)
+    for m in numlist:
+        if m % n == 0:
+            answer.append(m)
     return answer
 
 

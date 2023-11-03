@@ -16,6 +16,7 @@ def solution(numbers):
         numbers = numbers.replace(eng, str(num))
     return int(numbers)
 
+
 # 다른 풀이 2.
 #  for k in dict.keys()
 def solution(numbers):

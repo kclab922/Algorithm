@@ -8,6 +8,7 @@ def solution(numbers, k):
 
 # 다른 풀이
 # 명쾌하다.
+# 인덱스 구하는 것까지는 같으나, 해당 인덱스가 리스트의 길이를 넘어갈 때의 처리방식이 나와 달랐음.
 def solution(numbers, k):
     return numbers[2 * (k - 1) % len(numbers)]
 
