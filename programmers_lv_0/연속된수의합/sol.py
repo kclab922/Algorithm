@@ -1,5 +1,6 @@
 def solution(num, total):
-    for _ in range(total: ,-1)
+    for _ in range(total: ,-1):
+        
 
 print(solution(3, 12))
 print(solution(5, 15))
