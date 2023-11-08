@@ -35,7 +35,7 @@ def solution(board):
 def solution(board):
     n = len(board)
     danger = set()
-    for i, row in enumerate(board):
+    for i, row in enumerate(board): 
         for j, x in enumerate(row):
             if not x:
                 continue
