@@ -1,5 +1,5 @@
 # 내 코드
-# 1. arr1, arr2의 각 원소를 이진수로 바꾸어 같은 자릿수끼리 더해서 
+# 1. arr1, arr2의 각 원소를 이진수로 바꾸어 같은 자릿수끼리 더하기
 #   - bin(): arr1, arr2의 각 원소를 이진수로 (이때 str상태)
 #   - [2:]: bin 썼을 때 앞에 붙는 Ob 제거 
 #   - int(): 현재 str 상태이므로 int화
@@ -27,8 +27,9 @@ def solution(n, arr1, arr2):
 
 
 # 다른 코드
-# bin(i|j):
-# str.rjust(n, '0'): 
+# 나와 접근방식이 동일하나, 함수/메소드 더 공격적으로 활용
+# bin(i|j): i와 j의 합집합(or) ex) bin(0b1101 | 0b1001) => '0b1101'
+# str.rjust(n, '0'): (전체자리숫자, 공백 있을 경우 공백 대체 문자)
 def solution(n, arr1, arr2):
     answer = []
     for i,j in zip(arr1,arr2):
