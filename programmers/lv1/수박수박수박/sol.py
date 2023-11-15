@@ -1,13 +1,13 @@
 def solution(n):
-    answer = ''
-    count = 0
-    while count != n:
-        for i in '수박':
-            answer += i
-            count += 1
-    return answer
+    if n%2 == 0:
+        return '수박'*(n//2)
+    else:
+        return '수박'*(n//2) + '수'
 
 
+# 다른 코드
+def water_melon(n):
+    return ("수박"*n)[0:n]
 
 print(solution(3))
 print(solution(4))
