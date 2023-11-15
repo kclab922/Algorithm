@@ -1,5 +1,5 @@
-# 내 코드
-# 풀이방법: tc 속 규칙 이용
+# 내 코드 (효율성 극대화 노력.. 전체 tc 1800ms 이하)
+# 풀이방법: 1. tc에서 발견한 규칙을 이용하여 실패율 도출 => 2. 요구조건대로 정렬
 
 def solution(N, stages):
     fail = []
@@ -10,12 +10,11 @@ def solution(N, stages):
     while stage <= N:
         if b == 0:
             fail.append(0)
-            stage += 1
         else: 
             fail.append(a/b)
             b = b-a
             a = stages.count(stage+1)
-            stage += 1
+        stage += 1
 
     return sorted(range(1,N+1), key=lambda x: -fail[x-1])
 
@@ -36,8 +35,6 @@ def solution(N, stages):
 #         fail.append(not_clear / in_stage)
 
 #     return sorted(range(1,N+1), key=lambda x: -fail[x-1])
-
-
 
 
 
