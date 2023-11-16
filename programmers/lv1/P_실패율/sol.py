@@ -1,8 +1,8 @@
-# 내 코드 (효율성 극대화 노력.. 전체 tc 1800ms 이하)
+# 내 코드 
 # 풀이방법: 1. tc에서 발견한 규칙을 이용하여 실패율 도출 => 2. 요구조건대로 정렬
 
 def solution(N, stages):
-    fail = []
+    fail = [ ]
     a = stages.count(1)
     b = len(stages)
     stage = 1
@@ -17,7 +17,7 @@ def solution(N, stages):
         stage += 1
 
     return sorted(range(1,N+1), key=lambda x: -fail[x-1])
-
+                 
 
 # def solution(N, stages):
 #     fail = []
