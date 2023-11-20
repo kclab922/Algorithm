@@ -1,21 +1,15 @@
 def solution(num, hand):
     answer = ''
     pad = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ['*', 0, '#']]
-    l = [1, 4, 7]
-    r = [3, 6, 9]
-    m = [2, 5, 8, 0]
-
-    mydict = {}
-
-    for n in num:
-        if n in l:
-            mydict[n] = 'L'
-        elif n in r:
-            mydict[n] = 'R'
-        elif n == 2:
-
-
-    return pad.index(3)
+    for i in range(4):
+        for j in range(3):
+            if j == 0:
+                answer += 'L'
+            elif j == 2:
+                answer += 'R'
+            else:
+                if i == 0
+    return 
 
 
 print(solution([1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5], "right"))
