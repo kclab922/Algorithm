@@ -1,4 +1,5 @@
 # 내 코드
+# 전체구조: l부터 r까지 각 수의 약수를 구하고 => 약수 개수가 짝수면 더하고, 홀수면 빼기
 def solution(l, r):
     answer = 0
     for i in range(l, r+1):
