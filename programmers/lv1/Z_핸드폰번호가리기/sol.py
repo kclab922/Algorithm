@@ -9,17 +9,17 @@
 # print(solution("027778888"))
 
 
+#첫 번째 풀이
 def solution(phone_number):
     answer = ''
     pn = ''.join(reversed(phone_number))
     real_num = []
     num_list = []
-    for _ in (pn, -1, -1):
+    for _ in pn:
         num_list.append(_)
-    real_num = num_list[:4]
+    real_num = reversed(num_list[:4])
     real_num = ''.join(real_num)
     answer = '*' * (len(phone_number)-4) + real_num
-    
 
     return answer
     
