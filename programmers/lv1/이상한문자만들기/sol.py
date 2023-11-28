@@ -1,16 +1,15 @@
 def solution(s):
     answer = ''
-    for w in s.split(' '):
-        if w == ' ':
+    for i in range(len(s)):
+        if s[i] == ' ':
             answer += ' '
-        else: 
-            for i in range(len(w)):  
-                if i % 2:
-                    answer += w[i].lower() 
-                else:
-                    answer += w[i].upper() 
-        answer += ' '
+        else:
+            if i%2:
+                answer += s[i].lower()
+            else:
+                answer += s[i].upper()
+    
     return answer
 
+
 print(solution("try hello world"))
-print(solution("try     hello    world"))

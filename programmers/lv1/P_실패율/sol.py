@@ -38,7 +38,6 @@ def solution(N, stages):
 
 
 
-
 # 다른 코드
 def solution(N, stages):
     mdict = {}
