@@ -1,6 +1,6 @@
 def solution(park, routes):
     now = [0, 0]
-    d = {'N': [-1,0], 'W': [0,-1], 'E': [0,1], 'S': [1,0]}
+    d = { 'S': [1,0], 'E': [0,1], 'N': [-1,0], 'W': [0,-1]}
 
     for i, p in enumerate(park):
         if 'S' in p:
@@ -8,20 +8,18 @@ def solution(park, routes):
             break
 
     for r in routes:
-        op, n = r[0], int(r[2])
-        x, y = d[op][0], d[op][1]
-        count = 0
-        temp = [now[0], now[1]]
-
-        if 0 <= now[0]+(x*n) < len(park) and 0 <= now[1]+(y*n) < len(park[0]):
+        NEWS, n = r[0], int(r[2])
+        xm, ym = d[NEWS][0], d[NEWS][1]
+        if 0 <= now[0]+(xm*n) < len(park) and 0 <= now[1]+(ym*n) < len(park[0]):
+            count = 0
             while count < n:
-                if park[temp[0]+x][temp[1]+y] == 'X':
+                if park[now[0]+xm][now[1]+ym] == 'X':
                     break
                 else:            
-                    temp = [temp[0]+x, temp[1]+y]
+                    now = [now[0]+xm, now[1]+ym]
                     count += 1
-            if count == n:
-                now = temp
+            if count != n:
+                now = [now[0]-(xm*count), now[1]-(ym*count)]
 
     return now
 
