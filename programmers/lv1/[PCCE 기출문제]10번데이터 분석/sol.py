@@ -2,10 +2,6 @@ def solution(data, ext, v_ext, srt):
     answer = []
     extD = {"code":0, "date":1, "maximum":2, "remain":3}
     
-    dataD = {}
-    for i, d in enumerate(data):
-        dataD[i] = d
-
     for d in data:
         if d[extD[ext]] < v_ext:
             answer.append(d)
