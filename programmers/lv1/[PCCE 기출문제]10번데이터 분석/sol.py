@@ -6,9 +6,9 @@ def solution(data, ext, v_ext, srt):
     for i, d in enumerate(data):
         dataD[i] = d
 
-    for i in range(len(data)):
-        if data[i][extD[ext]] < v_ext:
-            answer.append(data[i])
+    for d in data:
+        if d[extD[ext]] < v_ext:
+            answer.append(d)
 
     return sorted(answer, key = lambda x: x[extD[srt]])
 
