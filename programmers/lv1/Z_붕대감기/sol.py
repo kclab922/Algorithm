@@ -9,10 +9,7 @@ def solution(band, health, attacks):
         else:
             if i <= len(attacks)-2:
                 between = attacks[i+1][0]-attacks[i][0]-1
-                if bandTime > between:
-                    now += healAmount * between
-                else:
-                    now += (healAmount * between) + (healAdd * (between//bandTime))
+                now += (healAmount * between) + (healAdd * (between//bandTime))
             if now > health:
                 now = health
 
