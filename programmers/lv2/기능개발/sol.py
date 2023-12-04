@@ -7,7 +7,7 @@ def solution(pro, spd):
     for p, s in zip(pro, spd):
         fin.append((100-p)//s+1 if (100-p)%s else (100-p)//s)
 
-    while len(fin):
+    while len(fin):   
         n = fin[0]
         count = 0      
         if n >= fin[0]:
