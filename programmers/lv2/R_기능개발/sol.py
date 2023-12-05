@@ -6,6 +6,7 @@ def solution(pro, spd):
     fin = deque()
     for p, s in zip(pro, spd):
         fin.append((100-p)//s+1 if (100-p)%s else (100-p)//s)
+    # deque([7, 3, 9])
 
     temp = []
     temp.append(fin.popleft())
@@ -15,7 +16,7 @@ def solution(pro, spd):
         else:
             answer.append(len(temp))
             temp = [fin.popleft()]
-            
+
     answer.append(len(temp))
     
     return answer
