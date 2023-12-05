@@ -7,15 +7,17 @@ def solution(pro, spd):
     for p, s in zip(pro, spd):
         fin.append((100-p)//s+1 if (100-p)%s else (100-p)//s)
 
-    while len(fin):   
-        n = fin[0]
-        count = 0      
-        if n >= fin[0]:
-            fin.popleft()
-            count += 1
-        else: 
-            answer.append(count)
-
+    temp = []
+    temp.append(fin.popleft())
+    while len(fin) > 0:
+        if temp[0] >= fin[0]:
+            temp.append(fin.popleft())
+        else:
+            answer.append(len(temp))
+            temp = [fin.popleft()]
+            
+    answer.append(len(temp))
+    
     return answer
 
 
