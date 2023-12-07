@@ -1,4 +1,3 @@
-
 def solution(priorities, location):
     queue =  [(i,p) for i,p in enumerate(priorities)]
     answer = 0
