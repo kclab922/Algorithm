@@ -1,5 +1,5 @@
 def solution(s):
-    return
+    return int(s)
 
 print(solution('1234'))
 print(solution('-1234'))
