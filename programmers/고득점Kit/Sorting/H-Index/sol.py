@@ -4,11 +4,11 @@
 from collections import deque
 
 def solution(citations):
-    h_max = len(citations)
-    citations.sort(reverse=True)
+    h_max = len(citations) # 3
+    citations.sort(reverse=True) #  1 0
     citations = deque(citations)
 
-    count = 0
+    count = 0 # 3
     while (count != h_max):
         if citations[0] >= h_max:
             citations.popleft()
@@ -21,11 +21,11 @@ def solution(citations):
 
 # 다른 코드
 def solution(citations):
-    citations = sorted(citations)
-    l = len(citations)
-    for i in range(l):
-        if citations[i] >= l-i:
-            return l-i
+    citations = sorted(citations) # 0 1 3 5 6
+    l = len(citations) # 5
+    for i in range(l): # 0 1 2 3 4
+        if citations[i] >= l-i: 
+            return l-i 
     return 0
 
 print(solution([3, 0, 6, 1, 5]))
