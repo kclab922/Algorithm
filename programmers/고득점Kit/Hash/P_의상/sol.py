@@ -17,5 +17,18 @@ def solution(clothes):
 
     return answer - 1
 
+
+# 다른 코드
+def solution(clothes):
+    mdict = {}
+    for cloth in clothes:
+        mdict[cloth[1]] = mdict.get(cloth[1], 0) + 1
+    
+    answer = 1
+    for num in mdict.values():
+        answer *= (num+1)
+    
+    return answer-1
+
 print(solution([["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]))
 print(solution([["crow_mask", "face"], ["blue_sunglasses", "face"], ["smoky_makeup", "face"]]))
