@@ -19,8 +19,8 @@ def solution(bridge, weight, truck):
 
         # passing
         while len(passing) and passing[0][0] == bridge:
-            weight += passing[0][1]
             passed.append(passing.popleft())
+            weight += passing[0][1]
         for i in range(len(passing)):
             passing[i][0] += 1
                             

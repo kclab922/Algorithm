@@ -4,17 +4,17 @@
 from collections import deque
 
 def solution(citations):
-    h_max = len(citations) # 3
-    citations.sort(reverse=True) #  1 0
+    h_max = len(citations) 
+    citations.sort(reverse=True)  
     citations = deque(citations)
 
-    count = 0 # 3
+    count = 0 
     while (count != h_max):
-        if citations[0] >= h_max:
+        if citations[0] >= h_max: 
             citations.popleft()
             count += 1
         else:
-            h_max -= 1
+            h_max -= 1 
 
     return h_max
 
