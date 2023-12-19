@@ -1,9 +1,16 @@
 def solution(participant, completion):
-    d = {}
+    myD = {}
     for p in participant:
-        d[p] = d.get(p, 0) + 1
+        myD[p] = myD.get(p, 0) + 1
+    # myD = {'leo': 1, 'kiki': 1, 'eden': 1}
     
-    return d
+    for c in completion:
+        myD[c] -= 1
+    # myD = {'leo': 1, 'kiki': 0, 'eden': 0}
+    
+    for k, v in myD.items():
+        if v == 1:
+            return k
 
 
 
