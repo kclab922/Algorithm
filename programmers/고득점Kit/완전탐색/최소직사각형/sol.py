@@ -8,7 +8,14 @@ def solution(sizes):
             if i[0] <= minSize[1] and i[1] <= minSize[0]:
                 pass
             else:
-                minSize = sizes[i]
+                # 지갑사이즈 가로세로 모두에 안 들어가는 경우
+                if min(i) > minSize[0] and min(i) > minSize[1]:
+                    minSize = i
+                # 현재 지갑사이즈 가로세로 중 하나라도 들어가는 경우
+                else:
+                    
+
+            
 
 
     return minSize
