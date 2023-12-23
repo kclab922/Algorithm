@@ -16,5 +16,7 @@ def solution(k, d):
     return 0
 
 
+# 다른 코드
+solution = lambda k, d: max([solution(k - u, d[:i] + d[i+1:]) + 1 for i, (m, u) in enumerate(d) if k >= m] or [0])
 
 print(solution(80, [[80,20],[50,40],[30,10]]))

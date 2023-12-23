@@ -16,9 +16,10 @@ def solution(sizes):
     return size[0] * size[1]
 
 
-
-
-
+# 다른 코드
+# 나랑 똑같은 메커니즘. 표현만 다름
+def solution(sizes):
+    return max(max(x) for x in sizes) * max(min(x) for x in sizes)
 
 
 print(solution([[60, 50], [30, 70], [60, 30], [80, 40]]))
