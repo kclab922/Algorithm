@@ -10,7 +10,7 @@ def solution(n, wires):
         [wires[:i]]+[wires[i+1:]]
     #     for c, d in wires[:i]+wires[i+1:]:
 
-
+  
     return wires[:i]+wires[i+1:]
 
 print(solution(9, [[1,3],[2,3],[3,4],[4,5],[4,6],[4,7],[7,8],[7,9]]))
