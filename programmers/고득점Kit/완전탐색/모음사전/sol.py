@@ -5,7 +5,7 @@ def solution(word):
     for i in range(1, 6, 1):
         myL = list(permutations([ 'A', 'E', 'I', 'O', 'U'], i))
         if 
-
+   
 
 print(solution("AAAAE"))
 # print(solution("AAAE"))
