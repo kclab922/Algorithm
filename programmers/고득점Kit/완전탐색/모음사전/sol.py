@@ -9,7 +9,7 @@ def solution(word):
             else:
                 loc += 1
     return j
-         
+                    
 
 print(solution("AAAAE"))
 # print(solution("AAAE"))
