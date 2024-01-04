@@ -1,17 +1,13 @@
-from itertools import permutations
+from itertools import product
 
 def solution(word):
-    loc = 1
-    for i in range(1, 6, 1):
-        for j in list(permutations(['A', 'E', 'I', 'O', 'U'], i)):
-            if ''.join(j) == word:
-                return j
-            else:
-                loc += 1
-    return j
-                    
-     
-print(solution("AAAAE"))
-# print(solution("AAAE"))
-# print(solution("I"))
-# print(solution("EIO"))
+    myL = []
+    for i in range(1, 6):
+        for k in product('AEIOU', repeat=i):
+            myL.append(''.join(list(k)))
+    
+    return sorted(myL).index(word) + 1
+
+print(solution("AAAE"))
+print(solution("I"))
+print(solution("EIO"))
