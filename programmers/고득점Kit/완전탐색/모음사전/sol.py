@@ -10,7 +10,7 @@ def solution(word):
                 loc += 1
     return j
                     
-
+     
 print(solution("AAAAE"))
 # print(solution("AAAE"))
 # print(solution("I"))
