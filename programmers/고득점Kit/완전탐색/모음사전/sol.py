@@ -17,7 +17,7 @@ print(solution("EIO"))
 
 
 # 순열/조합 관련 내용 정리
-num_list = [1,2,3,4]
+num_list = [1,2,3,4]   
 
 # 순열(순서 상관 있을 경우)
 from itertools import permutations
