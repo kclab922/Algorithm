@@ -13,11 +13,11 @@
 def solution(pb):
     myD = {}
     for i in pb:
-        for k in myD.keys():
-            if i == k[:len(i)]:
-                return False
-        myD[i] = 0
+        myD[i] = myD.get(i, 0)
+
+    for k in pb.keys():
         
+    
     return True
 
 print(solution(["119", "97674223", "1195524421"]))

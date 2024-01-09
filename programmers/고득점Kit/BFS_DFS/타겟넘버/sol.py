@@ -14,7 +14,10 @@ def solution(numbers, target):
 
     return count
     
-
+# product(*A)
+A = [[1,2,3],[4,5]]
+print(list(product(*A)))
+# [(1, 4), (1, 5), (2, 4), (2, 5), (3, 4), (3, 5)]
 
 
 print(solution([1, 1, 1, 1, 1], 3))
