@@ -24,7 +24,7 @@ def solution(begin, target, words):
                 if difference == 1: # j for문이 돌아서 현재단어와 words속 단어 하나를 비교했는데, 차이나는 글자 수가 1이라면
                     visited[i] # 해당 단어는 방문처리!
                     queue.append([words[i], count+1]) # 그리고 현재 단어를 해당 단어로 바꿔주고, 한 단계를 더 거친 것이므로 count+1 해서 큐에 넣어주자.
-        
+          
     return 0
 
 
