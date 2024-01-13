@@ -23,6 +23,7 @@ def solution(clothes):
     mdict = {}
     for cloth in clothes:
         mdict[cloth[1]] = mdict.get(cloth[1], 0) + 1
+    # mdict = {"headgear":2, "eyewear":1}
     
     answer = 1
     for num in mdict.values():

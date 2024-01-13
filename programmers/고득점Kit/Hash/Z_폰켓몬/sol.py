@@ -1,8 +1,8 @@
 # 내 코드
 def solution(nums):
     myD = {}
-    for n in nums:
-        myD[n] = myD.get(n, 0) + 1    # {3: 3, 2: 3}
+    for n in nums: 
+        myD[n] = myD.get(n, 0) + 1    
 
     return min(len(nums)//2, len(myD.keys()))
 

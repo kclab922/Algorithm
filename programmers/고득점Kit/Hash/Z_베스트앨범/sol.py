@@ -13,7 +13,7 @@ def solution(genres, plays):
     for g in genre:
         for i in range(0, 2):
             try: answer.append(md[g][i][0])
-            except: pass
+            except: pass  
     # 장르별로 밸류값에서 '0번, 1번째 튜플'의 '첫 번째 값(=고유번호)'만 모아서 도출
     # answer = [4, 1, 3, 0]
 
