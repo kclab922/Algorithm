@@ -3,7 +3,7 @@ from collections import deque
 
 def solution(begin, target, words):
     if target not in words: # 타겟이 워드에 아예 없을시 밑에서 while문이 계속 돌 수 있으므로 먼저 조건 설정.
-        return 0
+        return 0  
 
     queue = deque()
     queue.append([begin, 0])
@@ -25,8 +25,6 @@ def solution(begin, target, words):
                     visited[i] # 해당 단어는 방문처리!
                     queue.append([words[i], count+1]) # 그리고 현재 단어를 해당 단어로 바꿔주고, 한 단계를 더 거친 것이므로 count+1 해서 큐에 넣어주자.
           
-    return 0
-
 
 print(solution("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]))
 print(solution("hit", "cog", ["hot", "dot", "dog", "lot", "log"]))
