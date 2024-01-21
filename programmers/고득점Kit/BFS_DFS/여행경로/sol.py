@@ -5,3 +5,4 @@ def solution(tickets):
     
     while queue:
         
+   
