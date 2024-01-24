@@ -16,10 +16,10 @@ def solution(tickets):
         top = stack[-1]  # ICN
         # 스택 top을 start로 하는 티켓이 없는 경우
         if (top not in routes) or (not routes[top]):
-            answer.append(stack.pop())   # top을 스택에서 꺼내서 answer에 저장
+            answer.append(stack.pop())   # top을 스택에서 꺼내서 answer에 쌓아줌
         # 스택 top을 start로 하는 티켓이 있는 경우
         else:
-            stack.append(routes[top].pop())
+            stack.append(routes[top].pop()) # 해당 티켓을 꺼내서 스택에 쌓아줌
     # answer = ['SFO', 'ATL', 'SFO', 'ICN', 'ATL', 'ICN']
 
     return answer[::-1]

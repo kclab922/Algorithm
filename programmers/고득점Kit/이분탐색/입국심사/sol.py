@@ -9,7 +9,7 @@ def solution(n, times):
         mid = (start + end) // 2    # 현재 mid초 - 1~120초(60초) => 1~59초(30초) => 1~30초(15초) => 16~30초(23초) => 24~30초(27초) => 28초~30초(29초) => 28초
         
         count = 0   # 심사완료된 사람 수 누적
-        for time in sorted(times):  # time을 작은 수부터 돌려야 분모가 작고 count는 크므로, count가 n을 넘어가는 상황에서 for문이 빨리 끝남 - [7, 10]
+        for time in times:      # [7, 10]
             count += mid // time    # mid초일 때, 각 심사대(time)에서 통과시킨 사람의 수 - 8명 => 4+3=7명 => 2+1=3명 => 3+2=5명 => 3+2=5명 => 4+2=6명 => 4+2=6명
             if count > n:   # 어차피 n명까지만 심사하면 되므로, count가 n을 넘어가는 순간 for문 멈춰
                 break 
