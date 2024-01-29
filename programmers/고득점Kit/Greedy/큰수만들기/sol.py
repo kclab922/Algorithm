@@ -2,7 +2,7 @@ def solution(number, k):
 
     
     
-    return    
+    return       
 
 
 print(solution("1924", 2))
