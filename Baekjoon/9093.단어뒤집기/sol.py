@@ -2,7 +2,7 @@ import sys
 sys.stdin = open('input.txt') 
 
 TC = int(input())
-
+   
 for tc in range(TC):
     answer = ''
     words = input().split()
@@ -11,3 +11,4 @@ for tc in range(TC):
     print(answer)
 
 
+    
