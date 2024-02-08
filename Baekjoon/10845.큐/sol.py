@@ -20,3 +20,4 @@ for _ in range(TC):
         print(q[0]) if q else print(-1)
     else:
         print(q[-1]) if q else print(-1)
+   
