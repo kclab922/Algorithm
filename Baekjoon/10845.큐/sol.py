@@ -9,7 +9,7 @@ for _ in range(TC):
     command = sys.stdin.readline()
 
     if 'push' in command:
-        q.append(int(command[5:]))
+        q.append(int(command[5:]))  
     elif 'pop' in command:
         print(q.popleft()) if q else print(-1)
     elif 'size' in command:
