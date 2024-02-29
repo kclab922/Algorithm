@@ -15,4 +15,4 @@ for _ in range(n):
         if stack[-2:] == [')', '(']:
             stack.pop()
             stack.pop()
-    # print('NO') if stack else print('YES')
+    # print('NO') if stack else print('YES')  
